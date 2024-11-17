@@ -126,8 +126,29 @@ Una vez hecho lo anterior, desde inicializar `git` hasta hacer el `git push orig
 
 ## Recursos o fuentes que utilice 
 
-### Imagen de Ejemplo
-![Ejemplo del Proyecto](https://via.placeholder.com/800x400/7cd2e3/FFF?text=Imagen+de+ejemplo "Imagen de Ejemplo")
+### Fuentes utilizadas para el contenido del index.html
 
-### Enlace al Repositorio
+- `[Heavy metal](https://es.wikipedia.org/wiki/Heavy_metal)`
+- `[Babymetal](https://es.wikipedia.org/wiki/Babymetal)`
+- `[Página oficial de Baby Metal](https://babymetal.com/mob/index.php?site=TO&ima=2050)`
+- `[BABYMETAL: el fenómeno “kawaii metal” que divide al mundo del metal](https://heavymextal.com/babymetal-el-fenomeno-kawaii-metal-que-divide-al-mundo-del-metal/)`
+
+### Fuentes de Referencia para las etiquetas HTML
+
+- `[mdm web docs | CSS](https://developer.mozilla.org/es/docs/Web/CSS/margin)`
+- `[mdm web docs | HTML](https://developer.mozilla.org/es/docs/Web/HTML/Element/input)`
+- `[manz.dev | lenguajehtml.com](https://lenguajehtml.com/html/formularios/etiqueta-html-form/)`
+- `[Lista de tags HTML: hoja de trucos HTML. ¿Qué son y para qué sirven?](https://es.semrush.com/blog/lista-de-html-tags/)`
+- `[Etiquetas de HTML: qué son, para qué sirven y tipos principales](https://blog.hubspot.es/website/etiquetas-html)`
+- `[enlace en línea](https://htmlmasters.tech/100-etiquetas-html-pdf-y-su-funcion/)`
+- `[100 etiquetas de HTML y su función](http://www.limni.net)`
+
+### Páginas que me ayudaron 
+
+- `[Para probar el formulario](https://formsubmit.co/)`
+- `[Para alojar imagenes propias en un servidor](https://es.imgbb.com/)`
+- `[Para ver como se visualizaba mi página y hacer pruebas](https://html.onlineviewer.net/)`
+- `[Para ver como funciona el lenguaje Markdown y poder realizar este README.md](https://dillinger.io/)`
+---
+### Enlace a mi Repositorio
 GitHub: [Raccon0G](https://github.com/Raccoon0G/)
