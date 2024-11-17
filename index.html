@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El mundo Baby Metal</title>
+    <nav><!--Barra de navegacion con css o estilo-->
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; background-color: #444;"> <!--list-style: none; sirve para eliminar los marcadores predeterminados de la lista (•, 1., etc.)--> <!--margin: 0; sirve para eliminar cualquier margen externo que el navegador aplique por defecto al <ul>--> <!--padding: 0; Asegura que los elementos <li> no tengan espacio adicional.--> <!--display: flex; permite alinear y distribuir los <li> de manera más eficiente convirtiendo el contenedor <ul> en un contenedor flexible.--><!--justify-content: center ; Centra los <li> dentro de la lista <ul> centrando la barra de navegacion--> <!--background-color: #444 ; sirve para ponerle un color de fondo en la barra en este caso gris oscuro o #444-->>
+            <li style="margin: 0 15px;"><a href="#inicio" style="color: white; text-decoration: none;">Inicio</a></li><!--margin: 0 15px En este caso el 0: Define el margen superior e inferior del <li> como 0 píxeles (sin espacio) y el 15 px Añade un espacio horizontal (15 píxeles) entre los elementos de la lista <li> para separarlos visualmente.--> <!--color: white; Cambia el color del texto del enlace a blanco. --> <!--text-decoration: none; le quita el subrayado a los enlaces -->>
+            <li style="margin: 0 15px;"><a href="#subgeneros" style="color: white; text-decoration: none;">Subgéneros</a></li>
+            <li style="margin: 0 15px;"><a href="#babymetal" style="color: white; text-decoration: none;">Babymetal</a></li>
+            <li style="margin: 0 15px;"><a href="#integrantes" style="color: white; text-decoration: none;">Integrantes</a></li>
+            <li style="margin: 0 15px;"><a href="#Extras" style="color: white; text-decoration: none;">Extras</a></li>
+            <li style="margin: 0 15px;"><a href="#contacto" style="color: white; text-decoration: none;">Contacto</a></li>
+            
+        </ul>
+    </nav>
 </head>
 <body>
     <header>
         <h1>El mundo de Baby Metal</h1>
     </header>
-    <section>
+    <section id="inicio">
         <h2>Heavy Metal | Metal</h2>
         <p>El heavy metal es un género musical que surgió a finales de los años 60 y principios de los 70 en el Reino Unido y los Estados Unidos. Se caracteriza por su intensidad sonora, guitarras eléctricas amplificadas y distorsionadas, ritmos contundentes y voces que pueden variar desde melódicas hasta guturales. Según <a href="https://es.wikipedia.org/wiki/Heavy_metal" target="_blank">Wikipedia</a>, el heavy metal nació como una evolución del blues rock y el hard rock, con bandas pioneras como Black Sabbath, Deep Purple y Led Zeppelin sentando las bases del género.</p>
         <br>
@@ -17,7 +28,7 @@
         <br>
         <p>Se caracteriza principalmente por sus guitarras fuertes y distorsionadas, ritmos enfáticos, los sonidos del bajo y la batería son más densos de lo habitual y la voz es generalmente desgarrada, como también puede ser más aguda o incluso baja y gutural, dependiendo del estilo de la banda.</p>
     </section>
-    <section>
+    <section id="subgeneros">
         <h2>Subgéneros del metal y bandas representativas</h2>
         <p>El metal es un género diverso que incluye numerosos subgéneros, cada uno con su propia identidad y bandas icónicas:</p>
         <ul>
@@ -42,7 +53,7 @@
         </ul>
     </section>
     <hr>
-    <section>
+    <section id="babymetal">
         <h2>¿Quiénes son Babymetal?</h2>
         <p>Babymetal es una banda japonesa que combina elementos de J-Pop con el poderoso sonido del metal. Fundada en 2010, se ha destacado por su estilo único y su energía sobre el escenario. Su música pertenece al subgénero conocido como <strong>Kawaii Metal</strong>, que mezcla la energía del pop japonés con la intensidad del metal.Para más información, consulta su <a href="https://es.wikipedia.org/wiki/Babymetal" target="_blank">página de Wikipedia</a>.</p>
         <p>Babymetal forma parte de un universo conceptual conocido como <strong>Metalverse</strong>, que incluye colaboraciones y conceptos relacionados. Aunque no tienen "bandas hermanas" oficiales, sí cuentan con proyectos asociados como:</p>
@@ -62,7 +73,7 @@
         <br>
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Babymetal_performing_at_Ancienne_Belgique_December_4%2C_2023.jpg" width="458" height="221" alt="Babymetal en concierto"> 
     </section>
-    <section>
+    <section id="integrantes">
         <h2>Integrantes de Babymetal</h2>
         <table border="1">
             <thead> <!--parte superior de la tabla--> 
@@ -168,7 +179,7 @@
         <p>Descubre más sobre su música visitando su <a href="https://www.babymetal.com/" target="_blank">sitio oficial</a>.</p>
     </section>
     <hr>
-    <section>
+    <section id="Extras">
         <h2>Mis 10 canciones favoritas de Babymetal</h2>
         <ol>
             <li>METALI!! </li>
@@ -208,7 +219,7 @@
         <img src="https://i.ibb.co/jGcHvPj/IMG-20241109-205742.jpg" alt="Creo que en BxMxC" border="0"><!--Enlace donde la subi https://ibb.co/y5wVncx-->
     </section>
     <hr>
-    <section>
+    <section id="contacto">
         <h2>Suscríbete para más información</h2>
         <form action="https://formsubmit.co/brayam.torresgi@gmail.com" method="POST">
             <fieldset>
