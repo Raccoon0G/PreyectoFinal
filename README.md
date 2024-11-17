@@ -12,7 +12,7 @@ Mi página la organice de la siguiente manera:
 4. Por qué algunos metaleros no consideran a Babymetal como metal
 5. Integrantes de Babymetal
     - Banda de Apoyo (Kami Band)
-    -Integrantes
+    - Integrantes
 6. Babymetal y su giro al género
 7. Características únicas
 8. Discografía destacada
@@ -20,6 +20,40 @@ Mi página la organice de la siguiente manera:
 10. Fotos sacadas por mí de Babymetal  (img)
 11. Suscríbete para más información (Formulario)
 
+## Caracteristicas de mi página 
+
+En mi pagina hice uso de diferentes etiquetas como:
+
+- `<h1>` a `<h4>` Para el correcto titulado segun su jerarquia.
+
+- `<ul>` y `<ol>` con sus `<li>` para sus elemento.
+
+- `<nav>` para crear una barra de navegación y dezplazarme por el contenido con un clic en donde para ser mas especifico se utilizo un `<ul>` con `style=""`para darle mejor apariencia visual con los siguientes atributos `list-style: none;` sirve para eliminar los marcadores predeterminados de la lista (•, 1., etc.) `margin: 0;` que sirve para eliminar cualquier margen externo que el navegador aplique por defecto al `<ul>`, `padding: 0;`este se asegura que los elementos `<li>` no tengan espacio adicional, `display: flex;` permite alinear y distribuir los `<li>` de manera más eficiente convirtiendo el contenedor `<ul>` en un contenedor flexible, `justify-content: center ;` Centra los `<li>` dentro de la lista `<ul>` centrando la barra de navegacion y `background-color: #444 ;` sirve para ponerle un color de fondo en la barra en este caso gris oscuro o #444.
+Dentro de los `<li>` utilize `style=""`para darle mejor apariencia visual a la lista e hiciera mejor contraste visual mediante los siguiente atributos `margin: 0 15px` en este caso el 0: Define el margen superior e inferior del `<li>` como 0 píxeles (sin espacio) y el 15 px Añade un espacio horizontal (15 píxeles) entre los elementos de la lista `<li>` para separarlos visualmente, `color: white;` Cambia el color del texto del enlace a blanco y `text-decoration: none;` quita el subrayado a los enlaces dandole mejor apariencia visual.
+
+- `<section>` para dividir el contenido y poder enlazarla con la barra de navegación`<nav>` mediante el atributo `id="identificador_seccion"`.
+
+- `<p>` para agregar parrafos y utilice el atributo `<strong>` para poner algunas palabras en negritas y en ciertas partes del documentos como el `<footer>` le agregue como atributo `style=""` en donde utilice `text-align: center;` y `margin-top: 20px;` para ponerle un margen superior de 20 pixeles basicamente para darle un espaciado y centrar el texto.
+
+- `<img>` para insertar imagenes mediante varios atributos `src="link"` para colocar el enlace o la fuente de donde sacara la imagen `width=""` para el ancho de la imagen `height=""` para el alto de la imagen y  `alt="descripcion de imagen"` para describir la imagen. 
+
+- `<table>` para hacer tablas con los atributos `<thead>` para la parte superior de la tabla y `<tbody>` para definir que ira en el cuerpo de la tabla y dentro de los atributos anteriores `<tr>` para representar una fila en la tabla y `<td>` para las celdas dentro de las filas.
+
+- `<a>` para agregar enlaces o links mediante el atributo `href="link"` y asi redirigirnos a otra página o si queremos que habra una nueva pestaña se hace  con `target="_blank"` y listo.
+
+- `<iframe>` para agregar videos de youtube  mediante varios atributos `src="link"` para colocar el enlace o la fuente de donde sacara el video `width=""` para el ancho de la imagen `height=""` para el alto del video y  `title="descripcion de video"` para describir el video, `frameborder="0"` elimina el borde alrededor del iframe (en desuso, usa CSS). `allow="accelerometer;` `autoplay;` `clipboard-write;` `encrypted-media;` `gyroscope;` `picture-in-picture;` `web-share"` habilita permisos como accelerometer (permite usar el acelerómetro en el contenido), autoplay (reproduce video o audio automáticamente), clipboard-write (permite escribir datos en el portapapeles), encrypted-media (usa contenido protegido por DRM), gyroscope (permite el uso del giroscopio), picture-in-picture (habilita el modo de video flotante), y web-share (utiliza la API de Web Share para compartir contenido) y `referrerpolicy="strict-origin-when-cross-origin"` controla qué información de referencia se envía para proteger la privacidad. `allowfullscreen` permite que el video o contenido se vea en pantalla completa.
+
+- `<form>` para indicar que crearemos un formulario.
+
+- `<fieldset>` nos ayuda a  organizar visualmente los formularios y facilitar la comprensión del contenido para los usuarios y mediant sus atributo `<legend>` colocarle un nombre al formulario siempre van dentro del `<form>` tambien se pueden utilizar atributos `disabled` para desabilitarlos o `required` para hacer que los campos sean oblogatorios .
+
+- `<select>`se utiliza para crear un menú desplegable que permite seleccionar una opción en donde `<option>` mediante su atributo `value=""` nos permite mostrar opciones predefinidas por nosotros, `<select>` tiene atrutos como `id=""` y `name=""` el primero para enlazarlo con los `<label>`y el segundo para que al momento de enviar datos mediante un boton `<button>` se nos guarde la información con ese nombre.
+
+- `<label>`para las etiquetas de los `<input>` o `<select>` en donde el atributo`for=""` nos ayuda vincular la etiqueta para que al momento de que le demos clic a la misma se dirija directamente al `<input>` o `<select>` haciendo que el usuario siempre meta los datos en donde corresponda.
+
+- `<input>` se utiliza para crear campos de entrada en un formulario cuenta con atributos como `type:""` en donde pueden ser del tipo text,password,email,number,checkbox,radio,date,file etc.  tambien cuenta con el atributo `id=""` para vincularlo con una etiqueta `<label>`, `placeholder:""` para poner un texto guía dentro del campo, que desaparece cuando el usuario empieza a escribir, `required` para hacer que los campos sean oblogatorios etc. entre los más destacados.
+
+- `<footer>`para colocar un pie de página y le agregue como atributo `style=""` en donde utilice `text-align: center;` y `margin-top: 20px;` para ponerle un margen superior de 20 pixeles basicamente para darle un espaciado y centrar el texto.
 
 ## Comandos de Git que utilice para el Proyecto Final
 Primero que nada antes de pasar con los comandos que utlice, cree una carpeta con el nombre `ProyectoFinal` usando la estructura de texto Kamelcase, posteriormente esa carpeta la abri desde `VS code`, una vez abierta la carpeta cree mi archivo `index.html` y guarde los cambios, abri la terminal desde `VS code` para inicializar git y asi poder llevar un control de versiones adecuado en donde utilice el siguiente comando :
@@ -152,3 +186,7 @@ Una vez hecho lo anterior, desde inicializar `git` hasta hacer el `git push orig
 ---
 ### Enlace a mi Repositorio
 GitHub: [Raccon0G](https://github.com/Raccoon0G/)
+
+Enlace al repositorio de este trabajo : https://github.com/Raccoon0G/PreyectoFinal
+
+Enlace a la página (GitHub Pages) de este trabajo : https://raccoon0g.github.io/PreyectoFinal/
