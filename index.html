@@ -15,6 +15,184 @@
             
         </ul>
     </nav>
+    <style>
+        /* Estilos generales para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif; /* Define la fuente principal como Arial, con una alternativa sans-serif */
+            line-height: 1.6; /* Espaciado entre líneas */
+            margin: 0; /* Elimina el margen predeterminado del navegador */
+            padding: 0; /* Elimina el relleno predeterminado del navegador */
+            background-color: #333; /* Fondo de color gris oscuro */
+            color: #333; /* Color del texto (gris oscuro, posiblemente un error) */
+            text-align: justify; /* Justifica el texto */
+        }
+
+/* Estilos para el encabezado */
+        header {
+            background-color: #333; /* Fondo gris oscuro */
+            color: white; /* Texto blanco */
+            padding: 10px 20px; /* Espaciado interno en todas las direcciones */
+            text-align: center; /* Centra el contenido */
+        }
+
+/* Estilos para las secciones principales */
+        section {
+            padding: 20px; /* Espaciado interno */
+            margin: 10px auto; /* Espaciado externo y centrado */
+            max-width: 800px; /* Ancho máximo del contenedor */
+            background: white; /* Fondo blanco */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+/* Estilos para las imágenes */
+        img {
+            display: block; /* Evita espacios debajo de las imágenes */
+            margin: 10px auto; /* Centra horizontalmente y agrega margen */
+            max-width: 100%; /* Ajusta el ancho máximo al contenedor */
+            height: auto; /* Ajusta la altura proporcionalmente */
+        }
+
+/* Estilos para la barra de navegación */
+        nav ul {
+            list-style: none; /* Elimina viñetas de la lista */
+            margin: 0; /* Elimina margen */
+            padding: 0; /* Elimina relleno */
+            display: flex; /* Flexbox para alinear los elementos horizontalmente */
+            justify-content: center; /* Centra los elementos dentro del contenedor */
+            background-color: #444; /* Fondo gris oscuro */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas */
+        }
+
+/* Estilos para los elementos de la lista dentro de la navegación */
+        nav ul li {
+            margin: 5px 15px; /* Espaciado interno entre los elementos */
+        }
+
+/* Estilos para los enlaces dentro de la navegación */
+        nav ul li a {
+            color: white; /* Texto blanco */
+            text-decoration: none; /* Elimina subrayado */
+        }
+
+/* Contenedor para tablas responsivas */
+        .table-responsive {
+            overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
+            -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
+        }
+
+/* Estilos generales para tablas */
+        table {
+            width: 100%; /* Ocupa todo el ancho del contenedor */
+            border-collapse: collapse; /* Combina bordes adyacentes */
+            margin: 20px 0; /* Espaciado externo vertical */
+            border: 1px solid #ddd; /* Borde sutil */
+        }
+
+/* Estilos para las celdas de tabla */
+        th, td {
+            padding: 10px; /* Espaciado interno */
+            text-align: left; /* Alineación del texto a la izquierda */
+            border: 1px solid #ddd; /* Bordes entre celdas */
+            word-wrap: break-word; /* Permite dividir texto largo en varias líneas */
+        }
+
+/* Estilos para botones */
+        button {
+            background-color: #f9a825; /* Fondo amarillo */
+            color: white; /* Texto blanco */
+            border: none; /* Sin borde */
+            padding: 10px 15px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al estilo de puntero */
+        }
+
+/* Estilos para botones al pasar el mouse */
+        button:hover {
+            background-color: #d6a019; /* Cambia el color de fondo en hover */
+        }
+
+/* Estilos para el pie de página */
+        footer {
+            text-align: center; /* Centra el texto */
+            padding: 10px 20px; /* Espaciado interno */
+            background: #333; /* Fondo gris oscuro */
+            color: white; /* Texto blanco */
+            margin-top: 20px; /* Espaciado externo superior */
+        }
+
+/* Media Queries para pantallas más pequeñas (máximo 768px de ancho) */
+        @media (max-width: 768px) {
+        section {
+            padding: 15px; /* Reduce el espaciado interno */
+            margin: 5px auto; /* Ajusta el margen externo */
+        }   
+
+        header {
+            padding: 10px; /* Reduce el espaciado del encabezado */
+        }
+
+         nav ul {
+            flex-direction: column; /* Cambia la navegación a orientación vertical */
+            align-items: center; /* Centra los elementos verticalmente */
+            }
+
+        nav ul li {
+            margin: 10px 0; /* Más espacio entre los elementos */
+            }
+
+        table, th, td {
+            font-size: 14px; /* Reduce el tamaño de fuente en las tablas */
+            }
+        }
+
+/* Media Queries para pantallas más pequeñas (máximo 480px de ancho) */
+        @media (max-width: 480px) {
+        body {
+            font-size: 14px; /* Reduce el tamaño de fuente global */
+        }
+
+        header h1 {
+            font-size: 20px; /* Reduce el tamaño de fuente del título */
+        }
+
+        nav ul li a {
+            font-size: 14px; /* Reduce el tamaño de fuente de los enlaces */
+        }
+
+        button {
+            width: 100%; /* Botones ocupan todo el ancho */
+            padding: 10px; /* Ajusta el espaciado interno */
+        }
+
+        img {
+            max-width: 90%; /* Reduce el ancho máximo de las imágenes */
+        }
+
+            iframe {
+            max-width: 100%; /* Ajusta el ancho máximo de iframes */
+            height: auto; /* Ajusta la altura proporcionalmente */
+            display: block; /* Evita espacios extra */
+            margin: 0 auto; /* Centra el iframe */
+        }
+
+            .responsive-iframe {
+            position: relative; /* Establece un contenedor relativo */
+            width: 100%; /* Ocupa todo el ancho disponible */
+            padding-bottom: 56.25%; /* Mantiene la proporción 16:9 */
+            height: 0; /* Altura inicial en 0 */
+            overflow: hidden; /* Oculta el contenido desbordado */
+        }
+
+            .responsive-iframe iframe {
+            position: absolute; /* Posiciona el iframe dentro del contenedor */
+            top: 0; /* Alineación superior */
+            left: 0; /* Alineación izquierda */
+            width: 100%; /* Ajusta el ancho al contenedor */
+            height: 100%; /* Ajusta la altura al contenedor */
+        }
+    }
+    </style>    
 </head>
 <body>
     <header>
@@ -74,6 +252,7 @@
     </section>
     <section id="integrantes">
         <h2>Integrantes de Babymetal</h2>
+        <div class="table-responsive">
         <table border="1">
             <thead> <!--parte superior de la tabla--> 
                 <tr>
@@ -110,12 +289,14 @@
                 </tr>
             </tbody>
         </table>
+        </div>
         <h3>Banda de Apoyo (Kami Band)</h3>
         <p>Las actuaciones en directo son realizadas con la banda de apoyo llamada Kamiband, quienes aparecen maquillados al estilo corpse paint; siendo dos guitarristas, un bajista y un baterista quienes suben al escenario juntos durante el espectáculo y son referidos como los kami o los dioses, haciendo alusión a que cada miembro representa ser el dios del instrumento que toca. Durante las giras mundiales, la kamiband a veces presenta variaciones en sus miembros o rotaciones entre conocidos miembros constantes en los escenarios.</p>
         <br>
         <img src="https://i0.wp.com/www.mediafire.com/convkey/6aab/mqe9ihtz07s8ex26g.jpg?w=730&ssl=1" width="548" height="308" alt="Banda de Apoyo (Kami Band)"> 
         <br>
         <h4>Integrantes</h4>
+        <div class="table-responsive">
         <table border="1">
             <thead> <!--parte superior de la tabla--> 
                 <tr>
@@ -150,6 +331,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </section>
     <br>
     <br>
@@ -190,32 +372,56 @@
         <h2>Mis 10 canciones favoritas de Babymetal</h2>
         <ol>
             <li>METALI!! </li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hkij4LvACZ0?si=rNPSWeDvhHiXxyAZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>Monochrome</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FpPBPQUdFx8?si=aRTnGKN79aOSUSMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>MEGITSUNE</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/cK3NMZAUKGw?si=-RoGelxT8ALYYdFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>KARATE</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/GvD3CHA48pA?si=HnD0-HW_OUTV7ckQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>BXMXC</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ng8mh6JUIqY?si=8QcZYkJgYFT0mDjV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>OH MAIJINAI!</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/wPJyz0KvudE?si=ZUngVmE1YlWnAsqb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>RATATATA</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/EDnIEWyVIlE?si=DGmBVPS954vAr-4R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>Kingslayer</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hb2mMVdx1KU?si=KevWAZBLJW-W-0l8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>Road to Resistance</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/zTEYUFgLveY?si=twjq4_2q48EdLl-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>Papaya</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/oO7Y8NsnkRg?si=LQoxQ694dcYS8see" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </ol>
         <h3>Canciones Bonus</h3>
         <ul>
             <li>Ijime, Dame, Zettai</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/nDqaTXqCN-Q?si=NeL71gMYlqEc5gfb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <li>Metalizm</li>
+            <div class="responsive-iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Gz9_j1SpX5E?si=xWl3GU6E5toxOkfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </ul>
     </section>
     <section>

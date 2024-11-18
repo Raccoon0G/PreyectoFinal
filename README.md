@@ -54,7 +54,196 @@ Dentro de los `<li>` utilize `style=""`para darle mejor apariencia visual a la l
 - `<input>` se utiliza para crear campos de entrada en un formulario cuenta con atributos como `type:""` en donde pueden ser del tipo text,password,email,number,checkbox,radio,date,file etc.  tambien cuenta con el atributo `id=""` para vincularlo con una etiqueta `<label>`, `placeholder:""` para poner un texto guía dentro del campo, que desaparece cuando el usuario empieza a escribir, `required` para hacer que los campos sean oblogatorios etc. entre los más destacados.
 
 - `<footer>`para colocar un pie de página y le agregue como atributo `style=""` en donde utilice `text-align: center;` y `margin-top: 20px;` para ponerle un margen superior de 20 pixeles basicamente para darle un espaciado y centrar el texto.
+---
+### Estilo o Css
 
+En esta parte debo ser sincero, me ayude de ChatGpt para el tema `CSS` o `<style>`
+en donde le fui diciendo que queria en cada `<section>`, `<form>`,`<iframe>`, `<table>` etcetera,en cuanto a la página en HTML la hice toda yo, todos los fragmentos de código en que chatgpt me fue ayudando los fui comentando para saber que hacian obteniendo el siguiente código o estilo:
+
+```
+<style>
+        /* Estilos generales para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif; /* Define la fuente principal como Arial, con una alternativa sans-serif */
+            line-height: 1.6; /* Espaciado entre líneas */
+            margin: 0; /* Elimina el margen predeterminado del navegador */
+            padding: 0; /* Elimina el relleno predeterminado del navegador */
+            background-color: #333; /* Fondo de color gris oscuro */
+            color: #333; /* Color del texto (gris oscuro, posiblemente un error) */
+            text-align: justify; /* Justifica el texto */
+        }
+
+/* Estilos para el encabezado */
+        header {
+            background-color: #333; /* Fondo gris oscuro */
+            color: white; /* Texto blanco */
+            padding: 10px 20px; /* Espaciado interno en todas las direcciones */
+            text-align: center; /* Centra el contenido */
+        }
+
+/* Estilos para las secciones principales */
+        section {
+            padding: 20px; /* Espaciado interno */
+            margin: 10px auto; /* Espaciado externo y centrado */
+            max-width: 800px; /* Ancho máximo del contenedor */
+            background: white; /* Fondo blanco */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+/* Estilos para las imágenes */
+        img {
+            display: block; /* Evita espacios debajo de las imágenes */
+            margin: 10px auto; /* Centra horizontalmente y agrega margen */
+            max-width: 100%; /* Ajusta el ancho máximo al contenedor */
+            height: auto; /* Ajusta la altura proporcionalmente */
+        }
+
+/* Estilos para la barra de navegación */
+        nav ul {
+            list-style: none; /* Elimina viñetas de la lista */
+            margin: 0; /* Elimina margen */
+            padding: 0; /* Elimina relleno */
+            display: flex; /* Flexbox para alinear los elementos horizontalmente */
+            justify-content: center; /* Centra los elementos dentro del contenedor */
+            background-color: #444; /* Fondo gris oscuro */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas */
+        }
+
+/* Estilos para los elementos de la lista dentro de la navegación */
+        nav ul li {
+            margin: 5px 15px; /* Espaciado interno entre los elementos */
+        }
+
+/* Estilos para los enlaces dentro de la navegación */
+        nav ul li a {
+            color: white; /* Texto blanco */
+            text-decoration: none; /* Elimina subrayado */
+        }
+
+/* Contenedor para tablas responsivas */
+        .table-responsive {
+            overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
+            -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
+        }
+
+/* Estilos generales para tablas */
+        table {
+            width: 100%; /* Ocupa todo el ancho del contenedor */
+            border-collapse: collapse; /* Combina bordes adyacentes */
+            margin: 20px 0; /* Espaciado externo vertical */
+            border: 1px solid #ddd; /* Borde sutil */
+        }
+
+/* Estilos para las celdas de tabla */
+        th, td {
+            padding: 10px; /* Espaciado interno */
+            text-align: left; /* Alineación del texto a la izquierda */
+            border: 1px solid #ddd; /* Bordes entre celdas */
+            word-wrap: break-word; /* Permite dividir texto largo en varias líneas */
+        }
+
+/* Estilos para botones */
+        button {
+            background-color: #f9a825; /* Fondo amarillo */
+            color: white; /* Texto blanco */
+            border: none; /* Sin borde */
+            padding: 10px 15px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al estilo de puntero */
+        }
+
+/* Estilos para botones al pasar el mouse */
+        button:hover {
+            background-color: #d6a019; /* Cambia el color de fondo en hover */
+        }
+
+/* Estilos para el pie de página */
+        footer {
+            text-align: center; /* Centra el texto */
+            padding: 10px 20px; /* Espaciado interno */
+            background: #333; /* Fondo gris oscuro */
+            color: white; /* Texto blanco */
+            margin-top: 20px; /* Espaciado externo superior */
+        }
+
+/* Media Queries para pantallas más pequeñas (máximo 768px de ancho) */
+        @media (max-width: 768px) {
+        section {
+            padding: 15px; /* Reduce el espaciado interno */
+            margin: 5px auto; /* Ajusta el margen externo */
+        }   
+
+        header {
+            padding: 10px; /* Reduce el espaciado del encabezado */
+        }
+
+         nav ul {
+            flex-direction: column; /* Cambia la navegación a orientación vertical */
+            align-items: center; /* Centra los elementos verticalmente */
+            }
+
+        nav ul li {
+            margin: 10px 0; /* Más espacio entre los elementos */
+            }
+
+        table, th, td {
+            font-size: 14px; /* Reduce el tamaño de fuente en las tablas */
+            }
+        }
+
+/* Media Queries para pantallas más pequeñas (máximo 480px de ancho) */
+        @media (max-width: 480px) {
+        body {
+            font-size: 14px; /* Reduce el tamaño de fuente global */
+        }
+
+        header h1 {
+            font-size: 20px; /* Reduce el tamaño de fuente del título */
+        }
+
+        nav ul li a {
+            font-size: 14px; /* Reduce el tamaño de fuente de los enlaces */
+        }
+
+        button {
+            width: 100%; /* Botones ocupan todo el ancho */
+            padding: 10px; /* Ajusta el espaciado interno */
+        }
+
+        img {
+            max-width: 90%; /* Reduce el ancho máximo de las imágenes */
+        }
+
+            iframe {
+            max-width: 100%; /* Ajusta el ancho máximo de iframes */
+            height: auto; /* Ajusta la altura proporcionalmente */
+            display: block; /* Evita espacios extra */
+            margin: 0 auto; /* Centra el iframe */
+        }
+
+            .responsive-iframe {
+            position: relative; /* Establece un contenedor relativo */
+            width: 100%; /* Ocupa todo el ancho disponible */
+            padding-bottom: 56.25%; /* Mantiene la proporción 16:9 */
+            height: 0; /* Altura inicial en 0 */
+            overflow: hidden; /* Oculta el contenido desbordado */
+        }
+
+            .responsive-iframe iframe {
+            position: absolute; /* Posiciona el iframe dentro del contenedor */
+            top: 0; /* Alineación superior */
+            left: 0; /* Alineación izquierda */
+            width: 100%; /* Ajusta el ancho al contenedor */
+            height: 100%; /* Ajusta la altura al contenedor */
+        }
+    }
+    </style>    
+```
+
+Siendo sinceros en donde si no entendi mucho fue en la parte de los `<iframe>` y `<table>` en donde le dije que me ayudara a ajustar mi `CSS` a un diseño responsivo y que se adaptara a cualquier dispositivo, investigue vi videos pero no me funcionaban, hasta que me ayudo el gpt y me funciono, debo recalcar e insisto el documento en`hmtl` es completamente mio yo lo hice desde cero en donde me tarde aproximadamente 10 horas recabando información, repasando las etiquetas HTML y programando, en el css fue relativamente rápido en comparacion a lo que hice ya que tiene años que no hago un `css o hoja de estilo` en este caso ChatGpt me ayudo a darle un aspecto bueno aunque me llevo 3 horas aproximadamente ajustar el css a un estilo que me agradara y sobretodo entender que hacia cada una de las lineas de la seccion `<style>`.
+
+--- 
 ## Comandos de Git que utilice para el Proyecto Final
 Primero que nada antes de pasar con los comandos que utlice, cree una carpeta con el nombre `ProyectoFinal` usando la estructura de texto Kamelcase, posteriormente esa carpeta la abri desde `VS code`, una vez abierta la carpeta cree mi archivo `index.html` y guarde los cambios, abri la terminal desde `VS code` para inicializar git y asi poder llevar un control de versiones adecuado en donde utilice el siguiente comando :
 
